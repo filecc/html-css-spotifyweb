@@ -90,7 +90,6 @@
                     </div>
                 </div>
 
-
                 <!-- main content -->
                 <div id="content" class="col">
                     <!-- content navbar -->
@@ -99,11 +98,16 @@
                             <li class="uppercase pointer hover-accent text-grey relative">
                                 <span class="hidden"></span> in evidenza
                             </li>
-                            <li class="uppercase pointer hover-accent text-grey relative"><span class="hidden"></span>podcast</li>
-                            <li class="uppercase pointer hover-accent text-grey relative"><span class="hidden"></span>classifiche</li>
-                            <li class="uppercase pointer hover-accent text-grey relative"><span class="hidden"></span>generi e mood</li>
-                            <li class="uppercase pointer hover-accent text-grey relative"><span class="hidden"></span>nuove uscite</li>
-                            <li class="uppercase pointer hover-accent text-grey relative"><span class="hidden"></span>scopri</li>
+                            <li class="uppercase pointer hover-accent text-grey relative"><span
+                                      class="hidden"></span>podcast</li>
+                            <li class="uppercase pointer hover-accent text-grey relative"><span
+                                      class="hidden"></span>classifiche</li>
+                            <li class="uppercase pointer hover-accent text-grey relative"><span
+                                      class="hidden"></span>generi e mood</li>
+                            <li class="uppercase pointer hover-accent text-grey relative"><span
+                                      class="hidden"></span>nuove uscite</li>
+                            <li class="uppercase pointer hover-accent text-grey relative"><span
+                                      class="hidden"></span>scopri</li>
                         </ul>
                     </nav>
 
@@ -112,111 +116,171 @@
                         <h1 class="mt-2 font-md">Recently Played</h1>
                         <div class="row flex mt-2">
                             <div class="col text-center pointer">
-                                <img src="./img/metal_lifting.jpg" alt="metal">
+                                <div class="relative hover-img">
+                                    <img src="./img/metal_lifting.jpg" alt="metal">
+                                </div>
                                 <h4 class="pt-1">Heavy Metal</h4>
                                 <small class="text-grey">Spotify</small>
                             </div>
                             <div class="col text-center pointer">
-                                <img src="./img/stranger.jpeg" alt="stranger things">
+                                <div class="relative hover-img">
+                                    <img  src="./img/stranger.jpeg" alt="stranger things">
+                                </div>
                                 <h4 class="pt-1">Streanger Things Vol. 1 (a Netflix Original Series Soundtrack)</h4>
                                 <small class="text-grey">Kyle Dixon & Michael Stain</small>
                             </div>
                             <div class="col text-center pointer">
-                                <img src="./img/aquietplace.jpeg" alt="a quiet place">
+                                <div class="relative hover-img">
+                                    <img src="./img/aquietplace.jpeg" alt="a quiet place">
+                                </div>
+                               
                                 <h4 class="pt-1">A Quiet Place</h4>
                                 <small class="text-grey">Rosa Clark</small>
                             </div>
                             <div class="col text-center pointer">
-                                <img src="./img/split.jpeg" alt="split">
+                                <div class="relative hover-img">
+                                    <img src="./img/split.jpeg" alt="split">
+                                </div>
+                                
                                 <h4 class="pt-1">Split</h4>
                                 <small class="text-grey">Fundonk</small>
                             </div>
                             <div class="col text-center pointer">
-                                <img src="./img/cure.jpeg" alt="cure">
+                                <div class="relative hover-img">
+                                    <img src="./img/cure.jpeg" alt="cure">
+                                </div>
+                                
                                 <h4 class="pt-1">A cure for wellness</h4>
                                 <small class="text-grey">Giovanni Muciaccia</small>
                             </div>
                             <div class="col text-center pointer">
-                                <img src="./img/sinister.jpeg" alt="sinister">
+                                <div class="relative hover-img">
+                                    <img src="./img/sinister.jpeg" alt="sinister">
+                                </div>
+                               
                                 <h4 class="pt-1">Sinister</h4>
                                 <small class="text-grey">Destrorsi</small>
                             </div>
                         </div>
                     </section>
-                </div>
-            </div>
-        </div>
 
-        <!-- playbar -->
-        <div id="playBar" class="fixed w-full bg-dark-grey container">
-            <div class="flex align-center justify-between w-full h-full">
-                <!-- song info -->
-                <div class="w-230">
-                    <div class="flex align-center justify-between">
-                        <!-- album and name info -->
-                        <div class="flex align-center">
-                            <img class="w-25 mr-1 pointer" src="./img/elodie-album.jpeg" alt="elodie-ok-respira">
-
-                            <div>
-                                <h4 class="font-sm">Elodie</h4>
-                                <p class="font-xs">Ok. Respira</p>
+                    <!-- created for you -->
+                    <section id="created">
+                        <h2 class="font-md mt-2 pb-1">Creato per John Doe</h2>
+                        <small class="text-grey">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</small>
+                        <div class="row flex mt-2">
+                            <div class="col text-center pointer">
+                                <div class="relative hover-img">
+                                    <img src="./img/radar.jpeg" alt="release radar">
+                                </div>
+                                
+                                <h4 class="pt-1">Release Radar</h4>
+                            </div>
+                            <div class="col text-center pointer">
+                                <div class="relative hover-img">
+                                    <img src="./img/mixdaily.jpeg" alt="daily mix">
+                                </div>
+                               
+                                <h4 class="pt-1">Daily Mix 1</h4>
                             </div>
                         </div>
-                        <!-- like button -->
-                        <div class="flex wrap gap-05">
-                            <i class="fa-regular fa-heart pointer hover-accent"></i>
-                            <i class="fa-regular fa-folder pointer hover-accent"></i>
-                        </div>
-                    </div>
-                </div>
+                    </section>
 
-                <!-- music controls -->
-                <div class="controlsAndProgress">
-                   
-                        <!-- play stop next -->
-                        <div class="flex justify-center align-center gap-2 font-md controls">
-                            <i class="fa-solid fa-shuffle pointer hover-scale hover-accent"></i>
-                            <i class="fa-solid fa-backward-step pointer hover-scale hover-accent"></i>
-                            <i class="fa-regular fa-circle-play font-lg hover-scale hover-accent pointer"></i>
-                            <i class="fa-solid fa-forward-step hover-scale hover-accent pointer"></i>
-                            <i class="fa-solid fa-rotate-right hover-scale hover-accent pointer"></i>
-                        </div>
-                        <!-- track update -->
-                        <div class="flex justify-center align-center mt-1">
-                            <span>0:48</span>
-                            <div aria-hidden="true" id="trackProgress" class="relative">
-                                <div class="absolute"></div>
-                                <div class="progressHover"></div>
-                                <div class="absolute progress"></div>
+                    <!-- most played artist -->
+                    <section id="mostPlayed">
+                        <h2 class="font-md mt-2 pb-1">Artisti più popolari</h2>
+                        <small class="text-grey">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</small>
+                        <div class="row flex mt-2">
+                            <div class="col text-center pointer">
+                                <div class="relative hover-img">
+                                    <img class="rounded-full" src="./img/einaudi.jpeg" alt="einaudi">
+                                </div>
+                                
+                                <h4 class="pt-1">Ludovico Einaudi</h4>
                             </div>
-                            <span>3:38</span>
+                            <div class="col text-center pointer">
+                                <div class="relative hover-img">
+                                    <img class="rounded-full" src="./img/youg.jpeg" alt="Youg">
+                                </div>
+                                
+                                <h4 class="pt-1">Youg</h4>
+                            </div>
                         </div>
-                    
-                </div>
 
-                <!-- volume and streaming -->
-                <div class="w-230 flex align-center justify-center">
-                    <!-- icons -->
-                    <div class="flex gap-05">
-                        <i class="fa-solid fa-list hover-accent hover-scale pointer"></i>
-                        <i class="fa-solid fa-display hover-accent hover-scale pointer"></i>
-                        <i class="fa-solid fa-volume-high hover-accent hover-scale pointer"></i>
-                    </div>
-                    <!-- volume bar -->
-                    
-                        <div aria-hidden="true" id="volumeBar" class="relative w-70 xs-hidden pointer">
-                            <div class="available absolute w-70 pointer"></div>
-                            <div class="actual absolute pointer"></div>
-                            <div class="point absolute hidden pointer"></div>
-                        </div>
-                    
+                    </section>
                 </div>
-
             </div>
-
-
         </div>
     </main>
+    <!-- playbar -->
+    <footer id="playBar" class="fixed w-full bg-dark-grey container">
+        <div class="flex align-center justify-between w-full h-full">
+            <!-- song info -->
+            <div class="w-230">
+                <div class="flex align-center justify-between">
+                    <!-- album and name info -->
+                    <div class="flex align-center">
+                        <img class="w-25 mr-1 pointer" src="./img/elodie-album.jpeg" alt="elodie-ok-respira">
+
+                        <div>
+                            <h4 class="font-sm">Elodie</h4>
+                            <p class="font-xs">Ok. Respira</p>
+                        </div>
+                    </div>
+                    <!-- like button -->
+                    <div class="flex wrap gap-05">
+                        <i class="fa-regular fa-heart pointer hover-accent"></i>
+                        <i class="fa-regular fa-folder pointer hover-accent"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- music controls -->
+            <div class="controlsAndProgress">
+
+                <!-- play stop next -->
+                <div class="flex justify-center align-center gap-2 font-md controls">
+                    <i class="fa-solid fa-shuffle pointer hover-scale hover-accent"></i>
+                    <i class="fa-solid fa-backward-step pointer hover-scale hover-accent"></i>
+                    <i class="fa-regular fa-circle-play font-lg hover-scale hover-accent pointer"></i>
+                    <i class="fa-solid fa-forward-step hover-scale hover-accent pointer"></i>
+                    <i class="fa-solid fa-rotate-right hover-scale hover-accent pointer"></i>
+                </div>
+                <!-- track update -->
+                <div class="flex justify-center align-center mt-1">
+                    <span>0:48</span>
+                    <div aria-hidden="true" id="trackProgress" class="relative">
+                        <div class="absolute"></div>
+                        <div class="progressHover"></div>
+                        <div class="absolute progress"></div>
+                    </div>
+                    <span>3:38</span>
+                </div>
+
+            </div>
+
+            <!-- volume and streaming -->
+            <div class="w-230 flex align-center justify-center">
+                <!-- icons -->
+                <div class="flex gap-05">
+                    <i class="fa-solid fa-list hover-accent hover-scale pointer"></i>
+                    <i class="fa-solid fa-display hover-accent hover-scale pointer"></i>
+                    <i class="fa-solid fa-volume-high hover-accent hover-scale pointer"></i>
+                </div>
+                <!-- volume bar -->
+
+                <div aria-hidden="true" id="volumeBar" class="relative w-70 xs-hidden pointer">
+                    <div class="available absolute w-70 pointer"></div>
+                    <div class="actual absolute pointer"></div>
+                    <div class="point absolute hidden pointer"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </footer>
 </body>
 
 </html>
