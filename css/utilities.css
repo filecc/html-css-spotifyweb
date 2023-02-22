@@ -325,11 +325,19 @@ select {
     color: white;
 }
 .text-dark{
-    color: var(--grey);
+    color: var(--dark);
 }
 .accent{
     color: var(--accent);
 }
 .hidden{
     display: none;
+}
+
+/* text */
+.uppercase{
+    text-transform: uppercase;
+}
+.text-grey{
+    color: var(--grey);
 }

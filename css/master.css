@@ -20,14 +20,17 @@ header {
 header a {
     margin-right: 3rem;
     text-transform: uppercase;
-    border: 1px solid white;
+    border: 1px solid #eee;
+    color: #eee;
     padding: .5rem 2rem;
     border-radius: 2rem;
     cursor: pointer;
+    transition: all .2s;
 }
 
 header a:hover {
     transform: scale(1.1);
+    filter: brightness(1.5);
 }
 
 /* main */
@@ -70,9 +73,22 @@ main {
 #sidebar nav ul li:hover{
     border-left: 4px solid var(--accent);
 }
-#sidebar nav ul li:hover a, #sidebar nav ul li:hover img{
+#sidebar nav ul li:hover a, #sidebar nav ul li:hover img, .playlist .flex:hover, .playlist ul li:hover{
     filter: brightness(1.5);
     cursor: pointer;
+}
+#sidebar h2{
+    font-size: .8rem;
+}
+.addIcon{
+    font-size: 1.6rem;
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+}
+.playlist ul li{
+    color: var(--grey);
+    padding: .5rem 0;
 }
 
 
