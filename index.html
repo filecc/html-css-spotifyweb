@@ -101,9 +101,10 @@
         <!-- playbar -->
         <div id="playBar" class="fixed w-full bg-dark-grey container">
             <div class="flex align-center justify-between w-full h-full">
+                <!-- song info -->
                 <div class="w-230">
                     <div class="flex align-center justify-between">
-                        <!-- song info -->
+                        <!-- album and name info -->
                         <div class="flex align-center">
                             <img class="w-25 mr-1 pointer" src="./img/elodie-album.jpeg" alt="elodie-ok-respira">
 
@@ -113,15 +114,15 @@
                             </div>
                         </div>
                         <!-- like button -->
-                        <div class="flex wrap">
-                            <i class="fa-regular fa-heart pointer hover-accent mr-05"></i>
+                        <div class="flex wrap gap-05">
+                            <i class="fa-regular fa-heart pointer hover-accent"></i>
                             <i class="fa-regular fa-folder pointer hover-accent"></i>
                         </div>
                     </div>
                 </div>
 
                 <!-- music controls -->
-                <div class="w-60 controlsAndProgress">
+                <div class="controlsAndProgress">
                    
                         <!-- play stop next -->
                         <div class="flex justify-center align-center gap-2 font-md controls">
@@ -145,8 +146,21 @@
                 </div>
 
                 <!-- volume and streaming -->
-                <div class="w-230">
-                    volume
+                <div class="w-230 flex align-center justify-center">
+                    <!-- icons -->
+                    <div class="flex gap-05">
+                        <i class="fa-solid fa-list hover-accent hover-scale pointer"></i>
+                        <i class="fa-solid fa-display hover-accent hover-scale pointer"></i>
+                        <i class="fa-solid fa-volume-high hover-accent hover-scale pointer"></i>
+                    </div>
+                    <!-- volume bar -->
+                    
+                        <div aria-hidden="true" id="volumeBar" class="relative w-70 xs-hidden pointer">
+                            <div class="available absolute w-70 pointer"></div>
+                            <div class="actual absolute pointer"></div>
+                            <div class="point absolute hidden pointer"></div>
+                        </div>
+                    
                 </div>
 
             </div>

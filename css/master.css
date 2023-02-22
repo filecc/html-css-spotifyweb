@@ -52,6 +52,7 @@ main {
     transition: all .3s;
 }
 
+
 #sidebar nav ul li {
     border-left: 4px solid transparent;
 }
@@ -137,8 +138,6 @@ main {
 }
 
 
-
-
 /* main content */
 #content {
     max-width: calc(100% - 230px);
@@ -157,6 +156,9 @@ main {
 
 .w-230 {
     width: 215px;
+}
+.controlsAndProgress{
+   flex-basis: 65%;
 }
 
 #trackProgress {
@@ -200,6 +202,41 @@ main {
     cursor: pointer;
    
 }
+
+
+#volumeBar div{
+    padding: .2rem 0;
+    margin: 0 .5rem;
+    top: 0;
+    left: 0;
+    transform: translate(0, -50%);
+    background-color: #64666b;
+}
+#volumeBar .actual{
+    width: 30%;
+    padding: .2rem 0;
+    margin: 0 .5rem;
+    top: 0;
+    left: 0;
+    transform: translate(0, -50%);
+    background-color: var(--grey);
+}
+#volumeBar .point{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 0;
+    left: 30%;
+    transform: translate(0, -50%);
+    background-color: white;
+}
+#volumeBar:hover .point{
+    display: block;
+}
+#volumeBar:hover .actual{
+    background-color: var(--accent);
+}
+
 
 
 @media screen and (max-width: 575px) {
@@ -272,6 +309,9 @@ main {
     }
     .controlsAndProgress{
         padding: 0 .5rem;
+    }
+    .pr-05{
+        padding-right: 0.5rem;
     }
    
 }

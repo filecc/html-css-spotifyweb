@@ -63,7 +63,7 @@ select {
 .container {
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 .row {
@@ -311,6 +311,10 @@ select {
 }
 .mr-1{
     margin-right: 1rem;
+}
+
+.gap-05{
+    gap: 0.5rem;
 }
 
 .gap-1 {
