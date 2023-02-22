@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/utilities.css">
     <link rel="stylesheet" href="./css/master.css">
     <title>Spotify</title>
 </head>
-<body>
-    
+
+<body class="bg-quite-dark">
+    <!-- header -->
+    <header class="flex justify-end align-center">
+        <a href="">effettua upgrade</a>
+    </header>
+    <!-- main -->
+    <main>
+        <div class="w-full h-screen container">
+            <div class="flex row w-full h-screen">
+                <div id="sidebar" class="col bg-dark">
+                    <!-- logo -->
+                    <div class="flex align-center">
+                        <img class="w-70 xs-hidden" src="./img/logo.svg" alt="logo">
+                        <!-- on screen smaller then 575px the logo change -->
+                        <img class="xs-visible hidden" src="./img/logo-small.svg" alt="logo">
+                    </div>
+                </div>
+                <div id="content" class="col">
+                    main content
+                </div>
+            </div>
+        </div>
+        <div id="playBar" class="fixed w-full bg-dark-grey container">
+            playbar
+        </div>
+    </main>
 </body>
+
 </html>

@@ -1,48 +1,68 @@
-/* reset css */
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
+header {
+    position: fixed;
+    width: calc(100% - 230px);
+    top: 0;
+    left: 230px;
+    height: 70px;
+    background-color: #0007;
 }
 
-html:focus-within {
-  scroll-behavior: smooth;
+header a {
+    margin-right: 3rem;
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding: .5rem 2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+header a:hover{
+    transform: scale(1.1);
 }
 
-body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
+/* main */
+main{
+    overflow: hidden;
+}
+#sidebar {
+    max-width: 230px;
+    width: 230px;
+    min-height: calc(100% - 80px);
+    height: calc(100% - 80px);
+    transition: all .3s;
 }
 
-img,
-picture,
-video,
-canvas,
-svg {
-  max-width: 100%;
-  block-size: auto;
+#content {
+    max-width: calc(100% - 230px);
+    width: calc(100% - 230px);
+    overflow-y: auto;
+    min-height: calc(100% - 80px);
+    height: calc(100% - 80px);
+    margin-top: 70px;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+#playBar {
+    height: 80px;
+    bottom: 0;
 }
 
-ol,
-ul {
-  list-style: none;
+@media screen and (max-width: 575px){
+    header{
+        width: calc(100% - 50px);
+        top: 0;
+        left: 50px;
+    }
+    header a{
+        font-size: .8rem;
+    }
+    .xs-hidden{
+        display: none;
+    }
+    .xs-visible{
+        display: block;
+    }
+    #sidebar {
+        width: 50px;
+        min-height: calc(100% - 80px);
+        height: calc(100% - 80px);
+    }
 }
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-  border: none;
-}
-
-/* utilities */
