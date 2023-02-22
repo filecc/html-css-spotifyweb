@@ -105,7 +105,7 @@
                     <div class="flex align-center justify-between">
                         <!-- song info -->
                         <div class="flex align-center">
-                            <img class="w-20 mr-1" src="./img/elodie-album.jpeg" alt="elodie-ok-respira">
+                            <img class="w-25 mr-1 pointer" src="./img/elodie-album.jpeg" alt="elodie-ok-respira">
 
                             <div>
                                 <h4 class="font-sm">Elodie</h4>
@@ -113,20 +113,39 @@
                             </div>
                         </div>
                         <!-- like button -->
-                        <div class="flex gap-1">
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-regular fa-folder"></i>
+                        <div class="flex wrap">
+                            <i class="fa-regular fa-heart pointer hover-accent mr-05"></i>
+                            <i class="fa-regular fa-folder pointer hover-accent"></i>
                         </div>
                     </div>
                 </div>
 
                 <!-- music controls -->
-                <div class="w-60">
-                    music controls
+                <div class="w-60 controlsAndProgress">
+                   
+                        <!-- play stop next -->
+                        <div class="flex justify-center align-center gap-2 font-md controls">
+                            <i class="fa-solid fa-shuffle pointer hover-scale hover-accent"></i>
+                            <i class="fa-solid fa-backward-step pointer hover-scale hover-accent"></i>
+                            <i class="fa-regular fa-circle-play font-lg hover-scale hover-accent pointer"></i>
+                            <i class="fa-solid fa-forward-step hover-scale hover-accent pointer"></i>
+                            <i class="fa-solid fa-rotate-right hover-scale hover-accent pointer"></i>
+                        </div>
+                        <!-- track update -->
+                        <div class="flex justify-center align-center mt-1">
+                            <span>0:48</span>
+                            <div aria-hidden="true" id="trackProgress" class="relative">
+                                <div class="absolute"></div>
+                                <div class="progressHover"></div>
+                                <div class="absolute progress"></div>
+                            </div>
+                            <span>3:38</span>
+                        </div>
+                    
                 </div>
 
                 <!-- volume and streaming -->
-                <div class="w-20">
+                <div class="w-230">
                     volume
                 </div>
 

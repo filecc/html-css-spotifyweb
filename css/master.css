@@ -47,59 +47,76 @@ main {
 #sidebar {
     max-width: 230px;
     width: 230px;
-    min-height: calc(100% - 90px);
-    height: calc(100% - 90px);
+    min-height: calc(100% - 100px);
+    height: calc(100% - 100px);
     transition: all .3s;
 }
-#sidebar nav ul li{
+
+#sidebar nav ul li {
     border-left: 4px solid transparent;
 }
-#sidebar nav ul li:first-child{
+
+#sidebar nav ul li:first-child {
     border-left: 4px solid var(--accent);
 }
+
 #sidebar nav ul li img {
     width: 15%;
     margin: 0 0 0 1rem;
     filter: brightness(.6);
 }
-#sidebar nav ul li{
+
+#sidebar nav ul li {
     padding: .5rem 0;
     font-size: .8rem;
 }
-#sidebar nav ul li a{
+
+#sidebar nav ul li a {
     margin-left: .8rem;
     color: var(--grey);
 }
-#sidebar nav ul li:hover{
+
+#sidebar nav ul li:hover {
     border-left: 4px solid var(--accent);
 }
-#sidebar nav ul li:hover a, #sidebar nav ul li:hover img, .playlist .flex:hover, .playlist ul li:hover{
+
+#sidebar nav ul li:hover a,
+#sidebar nav ul li:hover img,
+.playlist .flex:hover,
+.playlist ul li:hover {
     filter: brightness(1.5);
     cursor: pointer;
 }
-#sidebar h2{
+
+#sidebar h2 {
     font-size: .8rem;
 }
-.addIcon{
+
+.addIcon {
     font-size: 1.6rem;
     width: 40px;
     height: 40px;
     margin-right: 1rem;
 }
-.playlist ul li{
+
+.playlist ul li {
     color: var(--grey);
     padding: .5rem 0;
 }
-#sidebar hr{
+
+#sidebar hr {
     border-bottom: 0;
 }
-.sidebarFooter{
+
+.sidebarFooter {
     width: 100%;
 }
-.sidebarFooter i{
+
+.sidebarFooter i {
     margin-right: .5rem;
 }
-.sidebarFooter i{
+
+.sidebarFooter i {
     width: 30px;
     height: 30px;
     border: 1px solid var(--grey);
@@ -107,10 +124,12 @@ main {
     font-size: .8rem;
     background-color: var(--grey);
 }
-.sidebarFooter div.download{
+
+.sidebarFooter div.download {
     font-size: .6rem;
 }
-.sidebarFooter div.download i{
+
+.sidebarFooter div.download i {
     width: 20px;
     height: 20px;
     font-size: .6rem;
@@ -125,18 +144,61 @@ main {
     max-width: calc(100% - 230px);
     width: calc(100% - 230px);
     overflow-y: auto;
-    min-height: calc(100% - 90px);
-    height: calc(100% - 90px);
+    min-height: calc(100% - 100px);
+    height: calc(100% - 100px);
     margin-top: 70px;
 }
 
 /* playbar */
 #playBar {
-    height: 90px;
+    height: 100px;
     bottom: 0;
 }
-.w-230{
+
+.w-230 {
     width: 215px;
+}
+
+#trackProgress {
+    width: 55%;
+    background-color: var(--grey);
+    padding: .2rem 0;
+    margin: 0 1rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+#trackProgress .progress{
+    width: 20%;
+    background-color:#64666b;
+    padding: .2rem 0;
+    top: 0;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+#trackProgress:hover div:first-child {
+    width: 20%;
+    background-color: var(--accent);
+    padding: .2rem 0;
+    top: 0;
+    cursor: pointer;
+    transition: all .3s;
+}
+#trackProgress:hover .progress{
+    display: none;
+    transition: all .3s;
+}
+#trackProgress:hover div.progressHover{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    top: 0;
+    left: 20%;
+    transform: translate(-50%, -30%);
+    cursor: pointer;
+   
 }
 
 
@@ -165,9 +227,10 @@ main {
 
     #sidebar {
         width: 50px;
-        min-height: calc(100% - 90px);
-        height: calc(100% - 90px);
+        min-height: calc(100% - 100px);
+        height: calc(100% - 100px);
     }
+
     #content {
         max-width: calc(100% - 50px);
         width: calc(100% - 50px);
@@ -179,10 +242,11 @@ main {
         padding: .4rem;
     }
 
-    .sidebarFooter i{
+    .sidebarFooter i {
         margin-right: 0;
     }
-    .sidebarFooter i{
+
+    .sidebarFooter i {
         width: 20px;
         height: 20px;
         border: 1px solid var(--grey);
@@ -190,13 +254,24 @@ main {
         font-size: .6rem;
         background-color: var(--grey);
     }
-    .sidebarFooter div.download{
+
+    .sidebarFooter div.download {
         font-size: .6rem;
     }
-    .sidebarFooter div.download i{
+
+    .sidebarFooter div.download i {
         width: 20px;
         height: 20px;
         font-size: .6rem;
         background-color: transparent;
     }
+
+    /* playbar */
+    .wrap {
+        flex-wrap: wrap;
+    }
+    .controlsAndProgress{
+        padding: 0 .5rem;
+    }
+   
 }
