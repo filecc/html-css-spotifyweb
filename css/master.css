@@ -1,3 +1,13 @@
+:root {
+    /* Color styles */
+    --dark: #000000;
+    --quite-dark: #141922;
+    --dark-grey: #282828;
+    --grey: #C1C1C1;
+    --accent: #ADFF2F;
+}
+
+
 header {
     position: fixed;
     width: calc(100% - 230px);
@@ -15,14 +25,22 @@ header a {
     border-radius: 2rem;
     cursor: pointer;
 }
-header a:hover{
+
+header a:hover {
     transform: scale(1.1);
 }
 
 /* main */
-main{
+main {
     overflow: hidden;
 }
+
+/* sidebar */
+#logoContainer {
+    height: 70px;
+    padding: 0 1rem;
+}
+
 #sidebar {
     max-width: 230px;
     width: 230px;
@@ -30,7 +48,36 @@ main{
     height: calc(100% - 80px);
     transition: all .3s;
 }
+#sidebar nav ul li{
+    border-left: 4px solid transparent;
+}
+#sidebar nav ul li:first-child{
+    border-left: 4px solid var(--accent);
+}
+#sidebar nav ul li img {
+    width: 15%;
+    margin: 0 0 0 1rem;
+    filter: brightness(.6);
+}
+#sidebar nav ul li{
+    padding: .5rem 0;
+    font-size: .8rem;
+}
+#sidebar nav ul li a{
+    margin-left: .8rem;
+    color: var(--grey);
+}
+#sidebar nav ul li:hover{
+    border-left: 4px solid var(--accent);
+}
+#sidebar nav ul li:hover a, #sidebar nav ul li:hover img{
+    filter: brightness(1.5);
+    cursor: pointer;
+}
 
+
+
+/* main content */
 #content {
     max-width: calc(100% - 230px);
     width: calc(100% - 230px);
@@ -40,29 +87,44 @@ main{
     margin-top: 70px;
 }
 
+/* playbar */
 #playBar {
     height: 80px;
     bottom: 0;
 }
 
-@media screen and (max-width: 575px){
-    header{
+@media screen and (max-width: 575px) {
+    header {
         width: calc(100% - 50px);
         top: 0;
         left: 50px;
     }
-    header a{
+
+    header a {
         font-size: .8rem;
     }
-    .xs-hidden{
+
+    .xs-hidden {
         display: none;
     }
-    .xs-visible{
+
+    .xs-visible {
         display: block;
     }
+
+    #logoContainer {
+        padding: 0 .5rem;
+    }
+
     #sidebar {
         width: 50px;
         min-height: calc(100% - 80px);
         height: calc(100% - 80px);
+    }
+
+    #sidebar nav ul li img {
+        width: 100%;
+        margin: 0;
+        padding: .4rem;
     }
 }

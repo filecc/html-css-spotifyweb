@@ -22,14 +22,45 @@
     <main>
         <div class="w-full h-screen container">
             <div class="flex row w-full h-screen">
-                <div id="sidebar" class="col bg-dark">
+
+                <!-- sidebar -->
+                <div id="sidebar" class="bg-dark">
+
                     <!-- logo -->
-                    <div class="flex align-center">
+                    <div id="logoContainer" class="flex align-center">
                         <img class="w-70 xs-hidden" src="./img/logo.svg" alt="logo">
                         <!-- on screen smaller then 575px the logo change -->
                         <img class="xs-visible hidden" src="./img/logo-small.svg" alt="logo">
                     </div>
+
+                    <!-- sidebar navbar -->
+                    <nav>
+                        <ul>
+                            <li>
+                                <div class="flex align-center">
+                                    <img aria-hidden="true" src="./img/home.svg" alt="home">
+                                    <a class="xs-hidden" href="./index.html">Home</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex align-center">
+                                    <img aria-hidden="true" src="./img/search.svg" alt="search">
+                                    <a class="xs-hidden" href="./index.html">Cerca</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex align-center">
+                                    <img aria-hidden="true" src="./img/libreria.svg" alt="library">
+                                    <a class="xs-hidden" href="./index.html">La tua libreria</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
+
+                <!-- sidebar playlist -->
+
+                <!-- main content -->
                 <div id="content" class="col">
                     main content
                 </div>

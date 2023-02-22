@@ -71,7 +71,7 @@ select {
 }
 
 .col {
-    padding: 15px;
+    padding: 0 15px;
 }
 
 .col-6 {
@@ -101,6 +101,9 @@ select {
 .h-screen {
     height: 100vh;
 }
+.w-15{
+    width: 15%;
+}
 
 .w-70{
     width: 70%;
@@ -115,7 +118,9 @@ select {
 .flex-col {
     flex-direction: column;
 }
-
+.row-reverse{
+    flex-direction: row-reverse;
+}
 .justify-center {
     justify-content: center;
 }
