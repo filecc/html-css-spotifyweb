@@ -28,7 +28,6 @@
                 <!-- sidebar -->
                 <div id="sidebar" class="bg-dark flex flex-col justify-between">
                     <div>
-
                         <!-- logo -->
                         <div id="logoContainer" class="flex align-center">
                             <img class="w-70 xs-hidden" src="./img/logo.svg" alt="logo">
@@ -78,15 +77,15 @@
                         </div>
                     </div>
                     <!-- sidebar footer -->
-                    <div class="container xs-hidden sidebarFooter">
-                        <div class="flex align-center text-grey download">
+                    <div class="container sidebarFooter">
+                        <div class="flex align-center text-grey download hover-white">
                             <i class="fa-solid fa-download flex align-center justify-center"></i>
-                            <p>Installa app</p>
+                            <p class="xs-hidden">Installa app</p>
                         </div>
                         <hr class="mt-1 mb-1">
-                        <div  class="flex align-center mb-1">
+                        <div class="flex align-center mb-1">
                             <i class="fa-regular fa-user flex align-center justify-center"></i>
-                            <p>John Doe</p>
+                            <p class="text-grey hover-white xs-hidden">John Doe</p>
                         </div>
                     </div>
                 </div>
@@ -98,8 +97,42 @@
                 </div>
             </div>
         </div>
+
+        <!-- playbar -->
         <div id="playBar" class="fixed w-full bg-dark-grey container">
-            playbar
+            <div class="flex align-center justify-between w-full h-full">
+                <div class="w-230">
+                    <div class="flex align-center justify-between">
+                        <!-- song info -->
+                        <div class="flex align-center">
+                            <img class="w-20 mr-1" src="./img/elodie-album.jpeg" alt="elodie-ok-respira">
+
+                            <div>
+                                <h4 class="font-sm">Elodie</h4>
+                                <p class="font-xs">Ok. Respira</p>
+                            </div>
+                        </div>
+                        <!-- like button -->
+                        <div class="flex gap-1">
+                            <i class="fa-regular fa-heart"></i>
+                            <i class="fa-regular fa-folder"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- music controls -->
+                <div class="w-60">
+                    music controls
+                </div>
+
+                <!-- volume and streaming -->
+                <div class="w-20">
+                    volume
+                </div>
+
+            </div>
+
+
         </div>
     </main>
 </body>

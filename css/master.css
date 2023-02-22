@@ -47,8 +47,8 @@ main {
 #sidebar {
     max-width: 230px;
     width: 230px;
-    min-height: calc(100% - 80px);
-    height: calc(100% - 80px);
+    min-height: calc(100% - 90px);
+    height: calc(100% - 90px);
     transition: all .3s;
 }
 #sidebar nav ul li{
@@ -125,16 +125,20 @@ main {
     max-width: calc(100% - 230px);
     width: calc(100% - 230px);
     overflow-y: auto;
-    min-height: calc(100% - 80px);
-    height: calc(100% - 80px);
+    min-height: calc(100% - 90px);
+    height: calc(100% - 90px);
     margin-top: 70px;
 }
 
 /* playbar */
 #playBar {
-    height: 80px;
+    height: 90px;
     bottom: 0;
 }
+.w-230{
+    width: 215px;
+}
+
 
 @media screen and (max-width: 575px) {
     header {
@@ -161,13 +165,38 @@ main {
 
     #sidebar {
         width: 50px;
-        min-height: calc(100% - 80px);
-        height: calc(100% - 80px);
+        min-height: calc(100% - 90px);
+        height: calc(100% - 90px);
+    }
+    #content {
+        max-width: calc(100% - 50px);
+        width: calc(100% - 50px);
     }
 
     #sidebar nav ul li img {
         width: 100%;
         margin: 0;
         padding: .4rem;
+    }
+
+    .sidebarFooter i{
+        margin-right: 0;
+    }
+    .sidebarFooter i{
+        width: 20px;
+        height: 20px;
+        border: 1px solid var(--grey);
+        border-radius: 50%;
+        font-size: .6rem;
+        background-color: var(--grey);
+    }
+    .sidebarFooter div.download{
+        font-size: .6rem;
+    }
+    .sidebarFooter div.download i{
+        width: 20px;
+        height: 20px;
+        font-size: .6rem;
+        background-color: transparent;
     }
 }
