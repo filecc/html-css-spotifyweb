@@ -147,6 +147,34 @@ main {
     height: calc(100% - 100px);
     margin-top: 70px;
 }
+/* navbar */
+#content nav ul{
+    flex-wrap: wrap;
+}
+#content nav ul li{
+    font-size: .8rem;
+}
+#content nav ul li:hover span{
+    display: block;
+    width: 30px;
+    height: 2px;
+    padding: 0 1rem;
+    border-bottom: 2px solid var(--accent);
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* recently */
+#recently h4{
+    padding-bottom: .5rem;
+}
+#recently div.row{
+    flex-wrap: wrap;
+}
+#recently .col{
+   
+}
 
 /* playbar */
 #playBar {
@@ -200,7 +228,6 @@ main {
     left: 20%;
     transform: translate(-50%, -30%);
     cursor: pointer;
-   
 }
 
 
@@ -303,6 +330,13 @@ main {
         background-color: transparent;
     }
 
+    /* main content */
+    /* recently */
+    .col {
+        width: calc(100% / 2);
+    }
+    
+    
     /* playbar */
     .wrap {
         flex-wrap: wrap;
