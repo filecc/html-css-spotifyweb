@@ -26,53 +26,68 @@
             <div class="flex row w-full h-screen">
 
                 <!-- sidebar -->
-                <div id="sidebar" class="bg-dark">
+                <div id="sidebar" class="bg-dark flex flex-col justify-between">
+                    <div>
 
-                    <!-- logo -->
-                    <div id="logoContainer" class="flex align-center">
-                        <img class="w-70 xs-hidden" src="./img/logo.svg" alt="logo">
-                        <!-- on screen smaller then 575px the logo change -->
-                        <img class="xs-visible hidden" src="./img/logo-small.svg" alt="logo">
-                    </div>
-
-                    <!-- sidebar navbar -->
-                    <nav>
-                        <ul>
-                            <li>
-                                <div class="flex align-center">
-                                    <img aria-hidden="true" src="./img/home.svg" alt="home">
-                                    <a class="xs-hidden" href="./index.html">Home</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="flex align-center">
-                                    <img aria-hidden="true" src="./img/search.svg" alt="search">
-                                    <a class="xs-hidden" href="./index.html">Cerca</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="flex align-center">
-                                    <img aria-hidden="true" src="./img/libreria.svg" alt="library">
-                                    <a class="xs-hidden" href="./index.html">La tua libreria</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </nav>
-
-                    <!-- sidebar playlist -->
-                    <div class="container mt-1 xs-hidden playlist">
-                        <h2 class="uppercase">playlist</h2>
-                        <div class="flex align-center mt-1">
-                            <i class="flex align-center justify-center fa-solid fa-plus bg-grey text-dark addIcon"></i>
-                            <p class="text-grey">Crea Playlist</p>
+                        <!-- logo -->
+                        <div id="logoContainer" class="flex align-center">
+                            <img class="w-70 xs-hidden" src="./img/logo.svg" alt="logo">
+                            <!-- on screen smaller then 575px the logo change -->
+                            <img class="xs-visible hidden" src="./img/logo-small.svg" alt="logo">
                         </div>
-                        <ul class="mt-1">
-                            <li>That's amore ❤️</li>
-                            <li>Facciamo Festa 🎉</li>
-                            <li>Almost 30's'</li>
-                            <li>Sanremo 2023</li>
-                            <li>Relax</li>
-                        </ul>
+
+                        <!-- sidebar navbar -->
+                        <nav>
+                            <ul>
+                                <li>
+                                    <div class="flex align-center">
+                                        <img aria-hidden="true" src="./img/home.svg" alt="home">
+                                        <a class="xs-hidden" href="./index.html">Home</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="flex align-center">
+                                        <img aria-hidden="true" src="./img/search.svg" alt="search">
+                                        <a class="xs-hidden" href="./index.html">Cerca</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="flex align-center">
+                                        <img aria-hidden="true" src="./img/libreria.svg" alt="library">
+                                        <a class="xs-hidden" href="./index.html">La tua libreria</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <!-- sidebar playlist -->
+                        <div class="container mt-1 xs-hidden playlist">
+                            <h2 class="uppercase">playlist</h2>
+                            <div class="flex align-center mt-1">
+                                <i
+                                   class="fa-solid fa-plus bg-grey text-dark flex align-center justify-center addIcon"></i>
+                                <p class="text-grey">Crea Playlist</p>
+                            </div>
+                            <ul class="mt-1">
+                                <li>That's amore ❤️</li>
+                                <li>Facciamo Festa 🎉</li>
+                                <li>Almost 30's'</li>
+                                <li>Sanremo 2023</li>
+                                <li>Relax</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- sidebar footer -->
+                    <div class="container xs-hidden sidebarFooter">
+                        <div class="flex align-center text-grey download">
+                            <i class="fa-solid fa-download flex align-center justify-center"></i>
+                            <p>Installa app</p>
+                        </div>
+                        <hr class="mt-1 mb-1">
+                        <div  class="flex align-center mb-1">
+                            <i class="fa-regular fa-user flex align-center justify-center"></i>
+                            <p>John Doe</p>
+                        </div>
                     </div>
                 </div>
 

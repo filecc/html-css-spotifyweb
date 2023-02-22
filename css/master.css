@@ -90,6 +90,33 @@ main {
     color: var(--grey);
     padding: .5rem 0;
 }
+#sidebar hr{
+    border-bottom: 0;
+}
+.sidebarFooter{
+    width: 100%;
+}
+.sidebarFooter i{
+    margin-right: .5rem;
+}
+.sidebarFooter i{
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--grey);
+    border-radius: 50%;
+    font-size: .8rem;
+    background-color: var(--grey);
+}
+.sidebarFooter div.download{
+    font-size: .6rem;
+}
+.sidebarFooter div.download i{
+    width: 20px;
+    height: 20px;
+    font-size: .6rem;
+    background-color: transparent;
+}
+
 
 
 
