@@ -14,7 +14,8 @@ header {
     top: 0;
     left: 230px;
     height: 70px;
-    background-color: #0007;
+    background: rgb(2, 0, 36);
+    z-index: 1000;
 }
 
 header a {
@@ -36,7 +37,6 @@ header a:hover {
 /* main */
 main {
     overflow: hidden;
-    
 }
 
 /* sidebar */
@@ -146,17 +146,20 @@ main {
     overflow-y: auto;
     min-height: calc(100% - 100px);
     height: calc(100% - 100px);
-    margin-top: 70px;
+    padding-top: 70px;
     padding-bottom: 100px;
 }
+
 /* navbar */
-#content nav ul{
+#content nav ul {
     flex-wrap: wrap;
 }
-#content nav ul li{
+
+#content nav ul li {
     font-size: .8rem;
 }
-#content nav ul li:hover span{
+
+#content nav ul li:hover span {
     display: block;
     width: 30px;
     height: 2px;
@@ -167,7 +170,8 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.hover-img:hover::after{
+
+.hover-img:hover::after {
     content: '\f144';
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
@@ -186,10 +190,13 @@ main {
 }
 
 /* recently */
-#recently h4{
+#recently h4 {
     padding-bottom: .5rem;
 }
-#recently div.row, #created div.row, #mostPlayed div.row{
+
+#recently div.row,
+#created div.row,
+#mostPlayed div.row {
     flex-wrap: wrap;
 }
 
@@ -202,8 +209,9 @@ main {
 .w-230 {
     width: 215px;
 }
-.controlsAndProgress{
-   flex-basis: 65%;
+
+.controlsAndProgress {
+    flex-basis: 65%;
 }
 
 #trackProgress {
@@ -214,9 +222,10 @@ main {
     cursor: pointer;
     transition: all .3s;
 }
-#trackProgress .progress{
+
+#trackProgress .progress {
     width: 20%;
-    background-color:#64666b;
+    background-color: #64666b;
     padding: .2rem 0;
     top: 0;
     cursor: pointer;
@@ -231,11 +240,13 @@ main {
     cursor: pointer;
     transition: all .3s;
 }
-#trackProgress:hover .progress{
+
+#trackProgress:hover .progress {
     display: none;
     transition: all .3s;
 }
-#trackProgress:hover div.progressHover{
+
+#trackProgress:hover div.progressHover {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -248,7 +259,7 @@ main {
 }
 
 
-#volumeBar div{
+#volumeBar div {
     padding: .2rem 0;
     margin: 0 .5rem;
     top: 0;
@@ -256,7 +267,8 @@ main {
     transform: translate(0, -50%);
     background-color: #64666b;
 }
-#volumeBar .actual{
+
+#volumeBar .actual {
     width: 30%;
     padding: .2rem 0;
     margin: 0 .5rem;
@@ -265,7 +277,8 @@ main {
     transform: translate(0, -50%);
     background-color: var(--grey);
 }
-#volumeBar .point{
+
+#volumeBar .point {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -274,10 +287,12 @@ main {
     transform: translate(0, -50%);
     background-color: white;
 }
-#volumeBar:hover .point{
+
+#volumeBar:hover .point {
     display: block;
 }
-#volumeBar:hover .actual{
+
+#volumeBar:hover .actual {
     background-color: var(--accent);
 }
 
@@ -352,17 +367,25 @@ main {
     .col {
         width: calc(100% / 2);
     }
-    
-    
+
+
     /* playbar */
     .wrap {
         flex-wrap: wrap;
     }
-    .controlsAndProgress{
+
+    .controlsAndProgress {
         padding: 0 .5rem;
     }
-    .pr-05{
+
+    .pr-05 {
         padding-right: 0.5rem;
     }
-   
+
+}
+
+@media screen and (min-width: 992px){
+    header{
+        background: linear-gradient(90deg, rgba(2, 0, 36, 0.5) 79%, rgba(0, 0, 0, 1) 100%);
+    }
 }
