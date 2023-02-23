@@ -171,6 +171,18 @@ main {
     transform: translate(-50%, -50%);
 }
 
+
+/* recently */
+#recently h4 {
+    padding-bottom: .5rem;
+}
+
+#recently div.row,
+#created div.row,
+#mostPlayed div.row {
+    flex-wrap: wrap;
+}
+
 .hover-img:hover::after {
     content: '\f144';
     font-family: 'Font Awesome 5 Free';
@@ -189,15 +201,8 @@ main {
     background-color: #0008;
 }
 
-/* recently */
-#recently h4 {
-    padding-bottom: .5rem;
-}
-
-#recently div.row,
-#created div.row,
-#mostPlayed div.row {
-    flex-wrap: wrap;
+.hover-img-round:after{
+    border-radius: 50%;
 }
 
 /* playbar */
