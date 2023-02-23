@@ -14,7 +14,7 @@ header {
     top: 0;
     left: 230px;
     height: 70px;
-    background: rgb(2, 0, 36);
+    background: var(--dark);
     z-index: 1000;
 }
 
@@ -371,6 +371,7 @@ main {
     /* recently */
     .col {
         width: calc(100% / 2);
+        margin-top: 1rem;
     }
 
 
@@ -386,6 +387,8 @@ main {
     .pr-05 {
         padding-right: 0.5rem;
     }
+
+    
 
 }
 
