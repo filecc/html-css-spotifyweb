@@ -322,10 +322,15 @@ main {
 }
 
 /* album page */
+#albumPage{
+    overflow-y: auto;
+    position: relative;
+}
 #headerAlbum{
     padding-top: 100px ;
     height: 400px;
     width: 100%;
+    
     background: linear-gradient(var(--grey), var(--quite-dark));
 }
 #headerAlbum .container{
@@ -364,6 +369,14 @@ h1{
     font-size: .2rem;
 }
 
+#listHeader, #listHeader .row, #listHeader .container{
+    width: 100%;
+}
+
+#listHeader .col:first-child{
+    width: 100%;
+   
+}
 
 @media screen and (max-width: 575px) {
     header {

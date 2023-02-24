@@ -63,7 +63,7 @@ select {
 .container {
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 0 0 15px;
+    padding: 0 15px 0 15px;
 }
 
 .row {
@@ -210,8 +210,14 @@ select {
 .uppercase{
     text-transform: uppercase;
 }
+.text-gray{
+    color: var(--grey);
+}
 .text-center{
     text-align: center;
+}
+.capitalize{
+    text-transform: capitalize;
 }
 .text-grey{
     color: var(--grey);
@@ -241,4 +247,7 @@ select {
 .font-lg{
     font-size: 2rem;
     transition: all .3s;
+}
+.text-bold{
+    font-weight: bold;
 }
