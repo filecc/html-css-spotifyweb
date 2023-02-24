@@ -101,6 +101,17 @@ main {
     margin-right: 1rem;
 }
 
+#sidebar .playlist{
+    
+    overflow: hidden;
+    height: 300px;
+}
+.playlist ul{
+    display: block;
+    overflow: auto;
+    height: 300px;
+}
+
 .playlist ul li {
     color: var(--grey);
     padding: .5rem 0;
@@ -141,13 +152,15 @@ main {
 
 /* main content */
 #content {
-    max-width: calc(100% - 230px);
     width: calc(100% - 230px);
     overflow-y: auto;
     min-height: calc(100% - 100px);
     height: calc(100% - 100px);
     padding-top: 70px;
     padding-bottom: 100px;
+}
+#recently .row{
+    padding-right: -15px;
 }
 
 /* navbar */
@@ -170,6 +183,9 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+
+
 
 
 /* recently */

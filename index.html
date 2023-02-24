@@ -22,194 +22,193 @@
     </header>
     <!-- main -->
     <main class="bg-quite-dark">
-            <div class="flex row w-full h-screen container">
+        <div class="flex row w-full h-screen">
 
-                <!-- sidebar -->
-                <div id="sidebar" class="bg-dark flex flex-col justify-between">
-                    <div>
-                        <!-- logo -->
-                        <div id="logoContainer" class="flex align-center">
-                            <img class="w-70 xs-hidden" src="./img/logo.svg" alt="logo">
-                            <!-- on screen smaller then 575px the logo change -->
-                            <img class="xs-visible hidden" src="./img/logo-small.svg" alt="logo">
-                        </div>
 
-                        <!-- sidebar navbar -->
-                        <nav>
-                            <ul>
-                                <li>
-                                    <div class="flex align-center">
-                                        <img aria-hidden="true" src="./img/home.svg" alt="home">
-                                        <a class="xs-hidden" href="./index.html">Home</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="flex align-center">
-                                        <img aria-hidden="true" src="./img/search.svg" alt="search">
-                                        <a class="xs-hidden" href="./index.html">Cerca</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="flex align-center">
-                                        <img aria-hidden="true" src="./img/libreria.svg" alt="library">
-                                        <a class="xs-hidden" href="./index.html">La tua libreria</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </nav>
-
-                        <!-- sidebar playlist -->
-                        <div class="container mt-1 xs-hidden playlist">
-                            <h2 class="uppercase">playlist</h2>
-                            <div class="flex align-center mt-1">
-                                <i
-                                   class="fa-solid fa-plus bg-grey text-dark flex align-center justify-center addIcon"></i>
-                                <p class="text-grey">Crea Playlist</p>
-                            </div>
-                            <ul class="mt-1">
-                                <li>That's amore ❤️</li>
-                                <li>Facciamo Festa 🎉</li>
-                                <li>Almost 30's'</li>
-                                <li>Sanremo 2023</li>
-                                <li>Relax</li>
-                            </ul>
-                        </div>
+            <!-- sidebar -->
+            <div id="sidebar" class="bg-dark flex flex-col justify-between">
+                <div>
+                    <!-- logo -->
+                    <div id="logoContainer" class="flex align-center">
+                        <img class="w-70 xs-hidden" src="./img/logo.svg" alt="logo">
+                        <!-- on screen smaller then 575px the logo change -->
+                        <img class="xs-visible hidden" src="./img/logo-small.svg" alt="logo">
                     </div>
-                    <!-- sidebar footer -->
-                    <div class="container sidebarFooter">
-                        <div class="flex align-center text-grey download hover-white">
-                            <i class="fa-solid fa-download flex align-center justify-center"></i>
-                            <p class="xs-hidden">Installa app</p>
-                        </div>
-                        <hr class="mt-1 mb-1">
-                        <div class="flex align-center mb-1">
-                            <i class="fa-regular fa-user flex align-center justify-center"></i>
-                            <p class="text-grey hover-white xs-hidden">John Doe</p>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- main content -->
-                <div id="content" class="col">
-                    <!-- content navbar -->
-                    <nav class="flex justify-center mt-1">
-                        <ul class="flex justify-center align-center text-center gap-1">
-                            <li class="uppercase pointer hover-accent text-grey relative">
-                                <span class="hidden"></span> in evidenza
+                    <!-- sidebar navbar -->
+                    <nav>
+                        <ul>
+                            <li>
+                                <div class="flex align-center">
+                                    <img aria-hidden="true" src="./img/home.svg" alt="home">
+                                    <a class="xs-hidden" href="./index.html">Home</a>
+                                </div>
                             </li>
-                            <li class="uppercase pointer hover-accent text-grey relative"><span
-                                      class="hidden"></span>podcast</li>
-                            <li class="uppercase pointer hover-accent text-grey relative"><span
-                                      class="hidden"></span>classifiche</li>
-                            <li class="uppercase pointer hover-accent text-grey relative"><span
-                                      class="hidden"></span>generi e mood</li>
-                            <li class="uppercase pointer hover-accent text-grey relative"><span
-                                      class="hidden"></span>nuove uscite</li>
-                            <li class="uppercase pointer hover-accent text-grey relative"><span
-                                      class="hidden"></span>scopri</li>
+                            <li>
+                                <div class="flex align-center">
+                                    <img aria-hidden="true" src="./img/search.svg" alt="search">
+                                    <a class="xs-hidden" href="./index.html">Cerca</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flex align-center">
+                                    <img aria-hidden="true" src="./img/libreria.svg" alt="library">
+                                    <a class="xs-hidden" href="./index.html">La tua libreria</a>
+                                </div>
+                            </li>
                         </ul>
                     </nav>
 
-                    <!-- recently played -->
-                    <section id="recently">
-                        <h1 class="mt-2 font-md">Recently Played</h1>
-                        <div class="row flex mt-2">
-                            <div class="col text-center pointer">
-                                <div class="relative hover-img">
-                                    <img src="./img/metal_lifting.jpg" alt="metal">
-                                </div>
-                                <h4 class="pt-1">Heavy Metal</h4>
-                                <small class="text-grey">Spotify</small>
-                            </div>
-                            <div class="col text-center pointer">
-                                <div class="relative hover-img">
-                                    <img  src="./img/stranger.jpeg" alt="stranger things">
-                                </div>
-                                <h4 class="pt-1">Streanger Things Vol. 1 (a Netflix Original Series Soundtrack)</h4>
-                                <small class="text-grey">Kyle Dixon & Michael Stain</small>
-                            </div>
-                            <div class="col text-center pointer">
-                                <div class="relative hover-img">
-                                    <img src="./img/aquietplace.jpeg" alt="a quiet place">
-                                </div>
-                               
-                                <h4 class="pt-1">A Quiet Place</h4>
-                                <small class="text-grey">Rosa Clark</small>
-                            </div>
-                            <div class="col text-center pointer">
-                                <div class="relative hover-img">
-                                    <img src="./img/split.jpeg" alt="split">
-                                </div>
-                                
-                                <h4 class="pt-1">Split</h4>
-                                <small class="text-grey">Fundonk</small>
-                            </div>
-                            <div class="col text-center pointer">
-                                <div class="relative hover-img">
-                                    <img src="./img/cure.jpeg" alt="cure">
-                                </div>
-                                
-                                <h4 class="pt-1">A cure for wellness</h4>
-                                <small class="text-grey">Giovanni Muciaccia</small>
-                            </div>
-                            <div class="col text-center pointer">
-                                <div class="relative hover-img">
-                                    <img src="./img/sinister.jpeg" alt="sinister">
-                                </div>
-                               
-                                <h4 class="pt-1">Sinister</h4>
-                                <small class="text-grey">Destrorsi</small>
-                            </div>
+                    <!-- sidebar playlist -->
+                    <div class="container mt-1 xs-hidden playlist">
+                        <h2 class="uppercase">playlist</h2>
+                        <div class="flex align-center mt-1">
+                            <i class="fa-solid fa-plus bg-grey text-dark flex align-center justify-center addIcon"></i>
+                            <p class="text-grey">Crea Playlist</p>
                         </div>
-                    </section>
-
-                    <!-- created for you -->
-                    <section id="created">
-                        <h2 class="font-md mt-2 pb-1">Creato per John Doe</h2>
-                        <small class="text-grey">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</small>
-                        <div class="row flex mt-2">
-                            <div class="col text-center pointer">
-                                <div class="relative hover-img">
-                                    <img src="./img/radar.jpeg" alt="release radar">
-                                </div>
-                                
-                                <h4 class="pt-1">Release Radar</h4>
-                            </div>
-                            <div class="col text-center pointer">
-                                <div class="relative hover-img">
-                                    <img src="./img/mixdaily.jpeg" alt="daily mix">
-                                </div>
-                               
-                                <h4 class="pt-1">Daily Mix 1</h4>
-                            </div>
-                        </div>
-                    </section>
-
-                    <!-- most played artist -->
-                    <section id="mostPlayed">
-                        <h2 class="font-md mt-2 pb-1">Artisti più popolari</h2>
-                        <small class="text-grey">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</small>
-                        <div class="row flex mt-2">
-                            <div class="col text-center pointer">
-                                <div class="relative hover-img hover-img-round">
-                                    <img class="rounded-full" src="./img/einaudi.jpeg" alt="einaudi">
-                                </div>
-                                
-                                <h4 class="pt-1">Ludovico Einaudi</h4>
-                            </div>
-                            <div class="col text-center pointer">
-                                <div class="relative hover-img hover-img-round">
-                                    <img class="rounded-full" src="./img/youg.jpeg" alt="Youg">
-                                </div>
-                                
-                                <h4 class="pt-1">Youg</h4>
-                            </div>
-                        </div>
-
-                    </section>
+                        <ul class="mt-1">
+                            <li>That's amore ❤️</li>
+                            <li>Facciamo Festa 🎉</li>
+                            <li>Almost 30's'</li>
+                            <li>Sanremo 2023</li>
+                            <li>Relax</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- sidebar footer -->
+                <div class="container sidebarFooter">
+                    <div class="flex align-center text-grey download hover-white">
+                        <i class="fa-solid fa-download flex align-center justify-center"></i>
+                        <p class="xs-hidden">Installa app</p>
+                    </div>
+                    <hr class="mt-1 mb-1">
+                    <div class="flex align-center mb-1">
+                        <i class="fa-regular fa-user flex align-center justify-center"></i>
+                        <p class="text-grey hover-white xs-hidden">John Doe</p>
+                    </div>
                 </div>
             </div>
-        
+
+            <!-- main content -->
+            <div id="content">
+                <!-- content navbar -->
+                <nav class="flex justify-center mt-1">
+                    <ul class="flex justify-center align-center text-center gap-1">
+                        <li class="uppercase pointer hover-accent text-grey relative">
+                            <span class="hidden"></span> in evidenza
+                        </li>
+                        <li class="uppercase pointer hover-accent text-grey relative"><span
+                                  class="hidden"></span>podcast</li>
+                        <li class="uppercase pointer hover-accent text-grey relative"><span
+                                  class="hidden"></span>classifiche</li>
+                        <li class="uppercase pointer hover-accent text-grey relative"><span class="hidden"></span>generi
+                            e mood</li>
+                        <li class="uppercase pointer hover-accent text-grey relative"><span class="hidden"></span>nuove
+                            uscite</li>
+                        <li class="uppercase pointer hover-accent text-grey relative"><span class="hidden"></span>scopri
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- recently played -->
+                <section id="recently" class="container">
+                    <h1 class="mt-2 font-md">Recently Played</h1>
+                    <div class="row flex mt-2">
+                        <div class="col text-center pointer">
+                            <div class="relative hover-img">
+                                <img src="./img/metal_lifting.jpg" alt="metal">
+                            </div>
+                            <h4 class="pt-1">Heavy Metal</h4>
+                            <small class="text-grey">Spotify</small>
+                        </div>
+                        <div class="col text-center pointer">
+                            <div class="relative hover-img">
+                                <img src="./img/stranger.jpeg" alt="stranger things">
+                            </div>
+                            <h4 class="pt-1">Streanger Things Vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                            <small class="text-grey">Kyle Dixon & Michael Stain</small>
+                        </div>
+                        <div class="col text-center pointer">
+                            <div class="relative hover-img">
+                                <img src="./img/aquietplace.jpeg" alt="a quiet place">
+                            </div>
+
+                            <h4 class="pt-1">A Quiet Place</h4>
+                            <small class="text-grey">Rosa Clark</small>
+                        </div>
+                        <div class="col text-center pointer">
+                            <div class="relative hover-img">
+                                <img src="./img/split.jpeg" alt="split">
+                            </div>
+
+                            <h4 class="pt-1">Split</h4>
+                            <small class="text-grey">Fundonk</small>
+                        </div>
+                        <div class="col text-center pointer">
+                            <div class="relative hover-img">
+                                <img src="./img/cure.jpeg" alt="cure">
+                            </div>
+
+                            <h4 class="pt-1">A cure for wellness</h4>
+                            <small class="text-grey">Giovanni Muciaccia</small>
+                        </div>
+                        <div class="col text-center pointer">
+                            <div class="relative hover-img">
+                                <img src="./img/sinister.jpeg" alt="sinister">
+                            </div>
+
+                            <h4 class="pt-1">Sinister</h4>
+                            <small class="text-grey">Destrorsi</small>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- created for you -->
+                <section id="created" class="container">
+                    <h2 class="font-md mt-2 pb-1">Creato per John Doe</h2>
+                    <small class="text-grey">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</small>
+                    <div class="row flex mt-2">
+                        <div class="col text-center pointer">
+                            <div class="relative hover-img">
+                                <img src="./img/radar.jpeg" alt="release radar">
+                            </div>
+
+                            <h4 class="pt-1">Release Radar</h4>
+                        </div>
+                        <div class="col text-center pointer">
+                            <div class="relative hover-img">
+                                <img src="./img/mixdaily.jpeg" alt="daily mix">
+                            </div>
+
+                            <h4 class="pt-1">Daily Mix 1</h4>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- most played artist -->
+                <section id="mostPlayed" class="container">
+                    <h2 class="font-md mt-2 pb-1">Artisti più popolari</h2>
+                    <small class="text-grey">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</small>
+                    <div class="row flex mt-2">
+                        <div class="col text-center pointer">
+                            <div class="relative hover-img hover-img-round">
+                                <img class="rounded-full" src="./img/einaudi.jpeg" alt="einaudi">
+                            </div>
+
+                            <h4 class="pt-1">Ludovico Einaudi</h4>
+                        </div>
+                        <div class="col text-center pointer">
+                            <div class="relative hover-img hover-img-round">
+                                <img class="rounded-full" src="./img/youg.jpeg" alt="Youg">
+                            </div>
+
+                            <h4 class="pt-1">Youg</h4>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
     </main>
     <!-- playbar -->
     <footer id="playBar" class="fixed w-full bg-dark-grey container">
