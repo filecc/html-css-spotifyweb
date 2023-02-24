@@ -89,125 +89,42 @@
                 </div>
             </div>
 
-            <!-- main content -->
-            <div id="content">
-                <!-- content navbar -->
-                <nav class="flex justify-center mt-1">
-                    <ul class="flex justify-center align-center text-center gap-1">
-                        <li class="uppercase pointer hover-accent text-grey relative">
-                            <span class="hidden"></span> in evidenza
-                        </li>
-                        <li class="uppercase pointer hover-accent text-grey relative"><span
-                                  class="hidden"></span>podcast</li>
-                        <li class="uppercase pointer hover-accent text-grey relative"><span
-                                  class="hidden"></span>classifiche</li>
-                        <li class="uppercase pointer hover-accent text-grey relative"><span class="hidden"></span>generi
-                            e mood</li>
-                        <li class="uppercase pointer hover-accent text-grey relative"><span class="hidden"></span>nuove
-                            uscite</li>
-                        <li class="uppercase pointer hover-accent text-grey relative"><span class="hidden"></span>scopri
-                        </li>
-                    </ul>
-                </nav>
+            <!-- album page -->
 
-                <!-- recently played -->
-                <section id="recently" class="container">
-                    <h1 class="mt-2 font-md">Recently Played</h1>
-                    <div class="row flex mt-2">
-                        <div class="col text-center pointer">
-                            <div class="relative hover-img">
-                                <img src="./img/metal_lifting.jpg" alt="metal">
+            <div id="headerAlbum">
+                <div class="container">
+                    <div class="row flex">
+                        <div class="col">
+                            <div class="albumContainer">
+                                <img src="./img/elodie-album.jpeg" alt="ok respira">
                             </div>
-                            <h4 class="pt-1">Heavy Metal</h4>
-                            <small class="text-grey">Spotify</small>
                         </div>
-                        <div class="col text-center pointer">
-                            <div class="relative hover-img">
-                                <img src="./img/stranger.jpeg" alt="stranger things">
+                        <div class="col flex flex-col">
+                            <span>ALBUM</span>
+                            <h1>Ok. Respira</h1>
+                            <div class="flex align-center gap-05">
+                                <img class="rounded-full w-5" src="./img/elodie_foto.png" alt="elodie">
+                                <p class="">Elodie</p>
+                                <i class="fa-solid fa-circle"></i>
+                                <small>2023</small>
+                                <i class="fa-solid fa-circle"></i>
+                                <small>13 brani</small>
+                                <i class="fa-solid fa-circle"></i>
+                                <small>42 min 48 sec</small>
                             </div>
-                            <h4 class="pt-1">Streanger Things Vol. 1 (a Netflix Original Series Soundtrack)</h4>
-                            <small class="text-grey">Kyle Dixon & Michael Stain</small>
-                        </div>
-                        <div class="col text-center pointer">
-                            <div class="relative hover-img">
-                                <img src="./img/aquietplace.jpeg" alt="a quiet place">
-                            </div>
-
-                            <h4 class="pt-1">A Quiet Place</h4>
-                            <small class="text-grey">Rosa Clark</small>
-                        </div>
-                        <div class="col text-center pointer">
-                            <div class="relative hover-img">
-                                <img src="./img/split.jpeg" alt="split">
-                            </div>
-
-                            <h4 class="pt-1">Split</h4>
-                            <small class="text-grey">Fundonk</small>
-                        </div>
-                        <div class="col text-center pointer">
-                            <div class="relative hover-img">
-                                <img src="./img/cure.jpeg" alt="cure">
-                            </div>
-
-                            <h4 class="pt-1">A cure for wellness</h4>
-                            <small class="text-grey">Giovanni Muciaccia</small>
-                        </div>
-                        <div class="col text-center pointer">
-                            <div class="relative hover-img">
-                                <img src="./img/sinister.jpeg" alt="sinister">
-                            </div>
-
-                            <h4 class="pt-1">Sinister</h4>
-                            <small class="text-grey">Destrorsi</small>
                         </div>
                     </div>
-                </section>
-
-                <!-- created for you -->
-                <section id="created" class="container">
-                    <h2 class="font-md mt-2 pb-1">Creato per John Doe</h2>
-                    <small class="text-grey">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</small>
-                    <div class="row flex mt-2">
-                        <div class="col text-center pointer">
-                            <div class="relative hover-img">
-                                <img src="./img/radar.jpeg" alt="release radar">
-                            </div>
-
-                            <h4 class="pt-1">Release Radar</h4>
-                        </div>
-                        <div class="col text-center pointer">
-                            <div class="relative hover-img">
-                                <img src="./img/mixdaily.jpeg" alt="daily mix">
-                            </div>
-
-                            <h4 class="pt-1">Daily Mix 1</h4>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- most played artist -->
-                <section id="mostPlayed" class="container">
-                    <h2 class="font-md mt-2 pb-1">Artisti più popolari</h2>
-                    <small class="text-grey">Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</small>
-                    <div class="row flex mt-2">
-                        <div class="col text-center pointer">
-                            <div class="relative hover-img hover-img-round">
-                                <img class="rounded-full" src="./img/einaudi.jpeg" alt="einaudi">
-                            </div>
-
-                            <h4 class="pt-1">Ludovico Einaudi</h4>
-                        </div>
-                        <div class="col text-center pointer">
-                            <div class="relative hover-img hover-img-round">
-                                <img class="rounded-full" src="./img/youg.jpeg" alt="Youg">
-                            </div>
-
-                            <h4 class="pt-1">Youg</h4>
-                        </div>
-                    </div>
-
-                </section>
+                </div>
             </div>
+
+            <!-- songs list -->
+            <div id="songsList">
+                
+            </div>
+
+
+
+
         </div>
     </main>
     <!-- playbar -->
@@ -218,9 +135,9 @@
                 <div class="flex align-center justify-between">
                     <!-- album and name info -->
                     <div class="flex align-center">
-                       <a  class="w-25 mr-1 pointer" href="./album.html">
-                        <img class="pointer" src="./img/elodie-album.jpeg" alt="elodie-ok-respira">
-                    </a>
+                        <a class="w-25 mr-1 pointer" href="./album.html">
+                            <img class="pointer" src="./img/elodie-album.jpeg" alt="elodie-ok-respira">
+                        </a>
                         <div>
                             <h4 class="font-sm">Elodie</h4>
                             <p class="font-xs">Ok. Respira</p>
@@ -255,9 +172,9 @@
                     </div>
                     <span class="xxs-hidden">3:38</span>
                 </div>
-                
+
             </div>
-            
+
 
             <!-- volume and streaming -->
             <div class="w-230 flex align-center justify-center">
@@ -285,7 +202,7 @@
             <div class="absolute progress"></div>
         </div>
     </footer>
-    
+
 </body>
 
 </html>
