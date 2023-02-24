@@ -227,8 +227,8 @@
                     </div>
                     <!-- like button -->
                     <div class="flex wrap gap-05">
-                        <i class="fa-regular fa-heart pointer hover-accent"></i>
-                        <i class="fa-regular fa-folder pointer hover-accent"></i>
+                        <i class="fa-regular fa-heart pointer hover-accent xxs-hidden"></i>
+                        <i class="fa-regular fa-folder pointer hover-accent xxs-hidden"></i>
                     </div>
                 </div>
             </div>
@@ -238,31 +238,32 @@
 
                 <!-- play stop next -->
                 <div class="flex justify-center align-center gap-2 font-md controls">
-                    <i class="fa-solid fa-shuffle pointer hover-scale hover-accent"></i>
-                    <i class="fa-solid fa-backward-step pointer hover-scale hover-accent"></i>
+                    <i class="fa-solid fa-shuffle pointer hover-scale hover-accent xxs-hidden"></i>
+                    <i class="fa-solid fa-backward-step pointer hover-scale hover-accent xxs-hidden"></i>
                     <i class="fa-regular fa-circle-play font-lg hover-scale hover-accent pointer"></i>
                     <i class="fa-solid fa-forward-step hover-scale hover-accent pointer"></i>
-                    <i class="fa-solid fa-rotate-right hover-scale hover-accent pointer"></i>
+                    <i class="fa-solid fa-rotate-right hover-scale hover-accent pointer xxs-hidden"></i>
                 </div>
                 <!-- track update -->
                 <div class="flex justify-center align-center mt-1">
-                    <span>0:48</span>
-                    <div aria-hidden="true" id="trackProgress" class="relative">
+                    <span class="xxs-hidden">0:48</span>
+                    <div aria-hidden="true" id="trackProgress" class="relative xxs-hidden">
                         <div class="absolute"></div>
                         <div class="progressHover"></div>
                         <div class="absolute progress"></div>
                     </div>
-                    <span>3:38</span>
+                    <span class="xxs-hidden">3:38</span>
                 </div>
-
+                
             </div>
+            
 
             <!-- volume and streaming -->
             <div class="w-230 flex align-center justify-center">
                 <!-- icons -->
                 <div class="flex gap-05">
-                    <i class="fa-solid fa-list hover-accent hover-scale pointer"></i>
-                    <i class="fa-solid fa-display hover-accent hover-scale pointer"></i>
+                    <i class="fa-solid fa-list hover-accent hover-scale pointer xxs-hidden"></i>
+                    <i class="fa-solid fa-display hover-accent hover-scale pointer xxs-hidden"></i>
                     <i class="fa-solid fa-volume-high hover-accent hover-scale pointer"></i>
                 </div>
                 <!-- volume bar -->
@@ -277,8 +278,13 @@
 
         </div>
 
-
+        <div aria-hidden="true" id="trackProgress" class="xxs-visible">
+            <div class="absolute"></div>
+            <div class="progressHover"></div>
+            <div class="absolute progress"></div>
+        </div>
     </footer>
+    
 </body>
 
 </html>

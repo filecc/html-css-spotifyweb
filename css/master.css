@@ -317,6 +317,10 @@ main {
     background-color: var(--accent);
 }
 
+.xxs-visible{
+    display: none;
+}
+
 
 
 @media screen and (max-width: 575px) {
@@ -403,7 +407,9 @@ main {
     .pr-05 {
         padding-right: 0.5rem;
     }
-
+    .xxs-visible{
+        display: none;
+    }
     
 
 }
@@ -411,5 +417,27 @@ main {
 @media screen and (min-width: 992px){
     header{
         background: linear-gradient(90deg, rgba(10, 10, 10, 0.5) 79%, rgba(0, 0, 0, 1) 100%);
+    }
+}
+
+@media screen and (max-height: 150px ) {
+    header{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .xxs-hidden{
+        display: none;
+    }
+    .xxs-visible{
+        display: block;
+    }
+    #trackProgress{
+        margin-left: -15px;
+        margin-bottom: 15px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
     }
 }
