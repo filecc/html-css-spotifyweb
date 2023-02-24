@@ -14,7 +14,7 @@ header {
     top: 0;
     left: 230px;
     height: 70px;
-    background: var(--dark);
+    background-color: var(--dark);
     z-index: 1000;
 }
 
@@ -410,6 +410,6 @@ main {
 
 @media screen and (min-width: 992px){
     header{
-        background: linear-gradient(90deg, rgba(2, 0, 36, 0.5) 79%, rgba(0, 0, 0, 1) 100%);
+        background: linear-gradient(90deg, rgba(10, 10, 10, 0.5) 79%, rgba(0, 0, 0, 1) 100%);
     }
 }
