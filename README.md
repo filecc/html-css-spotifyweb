@@ -27,7 +27,7 @@ This is a solution to the Exercise 12 of Boolean Academy.
 ### Links
 
 - Solution URL: [https://github.com/filecc/html-css-spotifyweb](https://github.com/filecc/html-css-spotifyweb)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://filecc.github.io/html-css-spotifyweb/]([https://your-live-site-url.com](https://filecc.github.io/html-css-spotifyweb/))
 
 ## My process
 
