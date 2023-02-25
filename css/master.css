@@ -51,6 +51,9 @@ main {
     min-height: calc(100% - 100px);
     height: calc(100% - 100px);
     transition: all .3s;
+    display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 }
 
 
@@ -116,6 +119,8 @@ main {
     color: var(--grey);
     padding: .5rem 0;
 }
+
+
 
 #sidebar hr {
     border-bottom: 0;
@@ -323,8 +328,15 @@ main {
 
 /* album page */
 #albumPage{
+    width: 100%;
+    height: calc(100vh - 100px);
     overflow-y: auto;
     position: relative;
+}
+#albumPage div.flex.p-1.justify-between:not(:first-child):hover{
+    background-color: var(--dark-grey);
+    cursor: pointer;
+    border-radius: 10px;
 }
 #headerAlbum{
     padding-top: 100px ;
@@ -352,7 +364,7 @@ main {
     justify-content: flex-end;
 }
 h1{
-    font-size: 5rem;
+    font-size: 5vw;
     padding: 1rem 0;
 }
 #headerAlbum span{
@@ -377,6 +389,29 @@ h1{
     width: 100%;
    
 }
+.playAlbum{
+    
+}
+
+.playAlbum i{
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.playAlbum i:first-child{
+    font-size: 4rem;
+    color: var(--accent);
+    
+}
+.playAlbum i:first-child:hover{
+    transform: scale(1.06);
+   
+}
+.playAlbum i:not(:first-child):hover{
+    filter: brightness(1.3);
+}
+
 
 @media screen and (max-width: 575px) {
     header {
@@ -467,6 +502,34 @@ h1{
     }
     #sidebar{
         min-width: 50px;
+    }
+
+    #headerAlbum{
+        margin-bottom: 6rem;
+    }
+
+    #headerAlbum .row:first-child{
+        flex-direction: column;
+        align-items: center;
+    }
+    h1{
+        width: 100%;
+    }
+
+    #headerAlbum .albumInfo{
+        width: 100%;
+        flex-direction: column;
+    }
+    #headerAlbum .albumInfo {
+        min-width: 100%;
+        text-align: center;
+    }
+    .albumInfo div{
+       display: flex;
+       justify-content: center;
+    }
+    .playAlbum{
+        justify-content: center;
     }
 
 }
